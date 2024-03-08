@@ -9,11 +9,14 @@ if (num1 == num2)
 {
     Console.WriteLine("числа равны");
 }
+else
+{
 if (num1 > num2)
 {
     Console.WriteLine("первое число больше");
 }
-if (num2 > num1)
+else
 {
     Console.WriteLine("второе число больше");
+}
 }
