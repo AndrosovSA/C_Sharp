@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Введите число: ");
+﻿// определить четное или нечетное заданное число
+Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int i = number % 2;

@@ -1,4 +1,5 @@
-﻿Console.WriteLine("firstNumber: ");
+﻿// сравнение двух чисел
+Console.WriteLine("firstNumber: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 
 

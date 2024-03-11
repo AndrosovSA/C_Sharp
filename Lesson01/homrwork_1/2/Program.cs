@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Введите первое число: ");
+﻿// Находим наибольше число из трех заданных
+Console.WriteLine("Введите первое число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите второе число: ");
