@@ -26,11 +26,12 @@ while(n / numDigit >= 10)
 {
 numDigit = numDigit * 10;
 }
-
+// далее
 while(numDigit > 0)
 {
 int result = n / numDigit;
 Console.Write(result + ", ");
-n = n - (result * numDigit);
+// n = n - (result * numDigit);
+n = n % numDigit;
 numDigit = numDigit / 10;
 }
