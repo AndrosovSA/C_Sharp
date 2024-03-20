@@ -20,13 +20,13 @@ int maxRange = 90;
 // }
 // Console.WriteLine(count);
 
-int count = 0;
+int result = 0;
 for (int i = 0; i < array.Length; i++)
 {
     if (array[i] >= minRange && array[i] <= maxRange)
     {
-        count++;
+        result++;
     }
 }
 
-Console.WriteLine(count);
+Console.WriteLine(result);
