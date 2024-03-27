@@ -2,9 +2,9 @@
 // состоящий из средних арифметических значений по строкам двумерного массива.
 
 
-double[,] CreatTable(int rowCount, int columnCount, int min, int max)
+int[,] CreatTable(int rowCount, int columnCount, int min, int max)
 {
-    double[,] table = new double[rowCount, columnCount];
+    int[,] table = new int[rowCount, columnCount];
     Random rnd = new Random();
     for (int i = 0; i < table.GetLength(0); i++)
     {
@@ -15,7 +15,7 @@ double[,] CreatTable(int rowCount, int columnCount, int min, int max)
     }
     return table;
 }
-void PrintTable(double[,] table)
+void PrintTable(int[,] table)
 {
     for (int i = 0; i < table.GetLength(0); i++)
     {
@@ -27,7 +27,7 @@ void PrintTable(double[,] table)
     }
 }
 
-double[] ArrayAverageRow(double[,] table)
+double[] ArrayAverageRow(int[,] table)
 {
     double[] array = new double[table.GetLength(0)];
     for (int i = 0; i < table.GetLength(0); i++)
@@ -46,7 +46,7 @@ void PrintArray(double[] array)
     Console.Write("[ ");
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"{array[i]} ");
+        Console.Write($"{array[i]}  ");
     }
     Console.Write("]");
 }
@@ -55,9 +55,9 @@ Console.WriteLine("Введите количество строк: ");
 int rowCount = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов: ");
 int columnCount = Convert.ToInt32(Console.ReadLine());
-double[,] tableResult = CreatTable(rowCount, columnCount, 1, 10);
+int[,] tableResult = CreatTable(rowCount, columnCount, 1, 10);
 Console.WriteLine("Таблица случайных чисел");
 PrintTable(tableResult);
-Console.WriteLine("Массив");
+Console.WriteLine("Массив. Элементы массива среднее арифметическое строк таблицы");
 double[] arrayResult = ArrayAverageRow(tableResult);
 PrintArray(arrayResult);
