@@ -21,21 +21,45 @@
 // string str = new string(chars);
 // Console.WriteLine(str);
 
-// Создание массива из строки
-string str = "Привет, я строка";
-char[] charsArray = str.ToCharArray();
-void PrintArray(char[] array)
+// Создание массива символов из строки
+// string str = "Привет, я строка";
+// char[] charsArray = str.ToCharArray();
+// void PrintArray(char[] array)
+// {
+//     Console.Write("[ ");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($"{array[i]} ");
+//     }
+//     Console.Write("]");
+// }
+// PrintArray(charsArray);
+
+// Создание массива слов из строки
+// string str = "Привет, я строка";
+// string[] wordArray = str.Split();
+void PrintArray(string[] array)
 {
     Console.Write("[ ");
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"{array[i]} ");
+        if (array[i].Length <= 3) Console.Write($"{array[i]} ");
     }
     Console.Write("]");
 }
-PrintArray(charsArray);
+// string[] NewString(string[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if 
+//     }
+// }
 
 
+Console.Write("Введите набор строк через пробел используя латинский алфавит и небуквенные символы: ");
+string? str = Console.ReadLine();
+string[] wordArray = str.Split();
+PrintArray(wordArray);
 
 
 
